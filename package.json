@@ -20,7 +20,7 @@
     "url": "https://github.com/ftfan/fcoin-otc"
   },
   "build": {
-    "productName": "bee",
+    "productName": "fcoin-otc",
     "appId": "com.imconfig.fcoin-otc",
     "directories": {
       "output": "build"
