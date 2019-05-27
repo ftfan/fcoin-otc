@@ -17,11 +17,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://xxxxxxxxxxxxx"
+    "url": "https://github.com/ftfan/fcoin-otc"
   },
   "build": {
     "productName": "bee",
-    "appId": "org.imconfig.FCoinOTC",
+    "appId": "com.imconfig.fcoin-otc",
     "directories": {
       "output": "build"
     },

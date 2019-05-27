@@ -5,7 +5,7 @@
     <!-- <el-button size="small" type="primary" plain @click="TurnToInfo2">划转到钱包</el-button> -->
     <div style="width:400px;">
       <el-tag size="mini">刷新委托单列表频次（{{ timeUpdate }} 秒，每次获取最新委托单列表时遇到可刷新的委托单，会自动刷新委托单）</el-tag><br>
-      <el-tag size="mini">下次获取最新列表：{{ dateformat.format(Now, 'yyyy-MM-dd hh:mm:ss') }}</el-tag>
+      <el-tag size="mini">下次获取最新列表：{{ dateformat.format(new Date(Now), 'yyyy-MM-dd hh:mm:ss') }}</el-tag>
       <el-slider :min="5" v-model="timeUpdate" :step="1" show-input></el-slider>
     </div>
     <hr>
@@ -120,7 +120,7 @@ export default {
       this.timer = setTimeout(() => {
         this.OTC_Fetch();
       }, this.timeUpdate * 1000);
-      this.Now = new Date(Date.now() + this.timeUpdate * 1000);
+      this.Now = Date.now() + this.timeUpdate * 1000;
     },
   },
 
