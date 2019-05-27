@@ -1,6 +1,6 @@
 {
   "name": "fcoin-otc",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "imconfig <imconfig@aliyun.com>",
   "description": "FCoinOTC",
   "main": "./dist/electron/main.js",
