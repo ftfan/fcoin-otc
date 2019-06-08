@@ -67,7 +67,7 @@ class Store extends Data {
     if (this.state.FCoinWs.Close) this.state.FCoinWs.Close();
     this.state.FCoinWs = new FcoinWebSocket({
       agent: UserStore.localState.Proxy.Http.host ? new HttpsProxyAgent(UserStore.localState.Proxy.Http) : undefined,
-    });
+    }, 'fcoin.pro');
     this.state.FCoinWs.HeartbeatInit(5000); // 5秒呼吸
     this.state.WsInitTime = this.state.FCoinWs.LastHeartbeat.ts;
     this.state.Candles = [];

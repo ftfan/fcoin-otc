@@ -13,7 +13,7 @@ const RequestHandler: {
 const BaseCoinSymbol = ['btcusdt', 'ethusdt', 'paxusdt', 'tusdusdt', 'usdcusdt', 'gusdusdt'];
 
 function FCoinCreate (agent?: any) {
-  const val = new FCoinApi('', '', agent ? new HttpsProxyAgent(agent) : undefined);
+  const val = new FCoinApi('', '', agent ? new HttpsProxyAgent(agent) : undefined, 'fcoin.pro');
   return val;
 }
 class Store extends Data {
@@ -189,7 +189,7 @@ class Store extends Data {
     if (this.state.FCoinWs.Close) this.state.FCoinWs.Close();
     this.state.FCoinWs = new FcoinWebSocket({
       agent: this.localState.Proxy.Http.host ? new HttpsProxyAgent(this.localState.Proxy.Http) : undefined,
-    });
+    }, 'fcoin.pro');
     this.state.FCoinWs.HeartbeatInit(5000); // 5秒呼吸
     this.state.WsInitTime = this.state.FCoinWs.LastHeartbeat.ts;
     this.state.Candles = [];

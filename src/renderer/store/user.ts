@@ -12,7 +12,7 @@ const dateformat = require('dateformat-util');
 const HttpsProxyAgent = require('https-proxy-agent');
 
 function FCoinCreate (key: string, secret: string, agent?: any) {
-  const val = new FCoinApi(key, secret, agent ? new HttpsProxyAgent(agent) : undefined);
+  const val = new FCoinApi(key, secret, agent ? new HttpsProxyAgent(agent) : undefined, 'fcoin.pro');
   // val.axios.interceptors.request.use(req => {
   //   req.headers = req.headers || {};
   //   // req.headers['Access-Control-Allow-Origin'] = '*';
