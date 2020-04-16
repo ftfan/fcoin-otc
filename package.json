@@ -87,7 +87,7 @@
     "element-ui": "^2.4.11",
     "fcoin-nodejs-api": "^1.4.0",
     "http-proxy-agent": "^2.1.0",
-    "https-proxy-agent": "^2.2.1",
+    "https-proxy-agent": "^2.2.3",
     "mathjs": "^5.4.0",
     "md5-typescript": "^1.0.5",
     "nedb": "^1.8.0",
