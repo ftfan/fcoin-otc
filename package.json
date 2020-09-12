@@ -91,7 +91,7 @@
     "mathjs": "^5.4.0",
     "md5-typescript": "^1.0.5",
     "nedb": "^1.8.0",
-    "node-fetch": "^2.3.0",
+    "node-fetch": "^2.6.1",
     "node-rsa": "^1.0.2",
     "ts-loader": "^5.3.1",
     "tslint": "^5.11.0",
