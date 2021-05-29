@@ -103,7 +103,7 @@
     "vue-ts-loader": "0.0.3",
     "vuex": "^3.0.1",
     "vuex-electron": "^1.0.0",
-    "ws": "^6.1.2"
+    "ws": "^7.4.6"
   },
   "devDependencies": {
     "@types/mathjs": "^4.4.4",
